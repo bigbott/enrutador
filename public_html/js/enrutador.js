@@ -48,10 +48,7 @@ window.enrutador = (function () {
         } else {
             window.history.pushState(pointer, pointer.routeTo, hash);
         }
-//        console.log(window.history);
     };
-
-
 
     const arrayGetObjectByAttribute = function (array, key, value) {
         for (let i = 0; i < array.length; i++) {
@@ -96,8 +93,6 @@ window.enrutador = (function () {
         go(pointer);
     };
 
-    //  const init = function () {
-    //enable browser back button
     window.onpopstate = function (event) {
         if (!event.state) {
             return;
@@ -105,8 +100,6 @@ window.enrutador = (function () {
         route(event.state);
     };
 
-    // };
-    //init();
     return {
         setRoutes: setRoutes,
         go: go
