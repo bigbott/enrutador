@@ -15,7 +15,7 @@ app.dogView = {
         
         $('#nameSelect').val(name);
         
-        $('#greeting').text('I am a cat ' + name);
+        $('#greeting').text('I am a dog ' + name);
     }
 };
 
